@@ -1,0 +1,12 @@
+
+clone:
+  git:
+    image: plugins/git
+    depth: 1
+
+pipeline:
+    lint:
+        image: node:slim
+        commands:
+            - npm install -g eslint eslint-plugin-html eslint-config-standard eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-plugin-standard eslint-plugin-vue babel-eslint eslint-config-fagougou --silent
+            - eslint --ext vue --ext js --quiet .

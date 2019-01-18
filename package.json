@@ -1,0 +1,17 @@
+{
+  "name": "fagougou-cli",
+  "version": "0.1.0",
+  "description": "Fagougou Command Line Tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test ./index.js -v"
+  },
+  "author": "xfanwu",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.19.0"
+  },
+  "devDependencies": {
+    "eslint-config-fagougou": "^1.3.1"
+  }
+}
