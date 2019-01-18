@@ -2,12 +2,16 @@
   "name": "fagougou-cli",
   "version": "0.1.0",
   "description": "Fagougou Command Line Tool",
-  "main": "index.js",
+  "main": "./index.js",
   "scripts": {
-    "test": "NODE_ENV=test ./index.js -v"
+    "test": "NODE_ENV=test ./index.js -v",
+    "build": "cp ./index.js ./bin/fggcli && chmod a+x fggcli"
   },
   "author": "xfanwu",
   "license": "MIT",
+  "bin": {
+    "fggcli": "./index.js"
+  },
   "dependencies": {
     "commander": "^2.19.0"
   },
