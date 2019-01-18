@@ -61,8 +61,8 @@ function generateVue () {
  * @param {Path} dir
  */
 function copyFilesToRoot (dir) {
-    const projectRootPath = process.NODE_ENV === 'test'
-        ? '../test'
+    const projectRootPath = process.env.NODE_ENV === 'test'
+        ? path.resolve(__dirname, './test/temp')
         : __dirname
 
     getFileList(dir).forEach(file => {
