@@ -12,9 +12,9 @@ const path = require('path')
  * Constant
  * @private
  */
-const PATH_GLOBAL = path.resolve('./node/global')
-const PATH_BASE = path.resolve('./node/base')
-const PATH_VUE = path.resolve('./node/vue')
+const PATH_GLOBAL = path.resolve(__dirname, './node/global')
+const PATH_BASE = path.resolve(__dirname, './node/base')
+const PATH_VUE = path.resolve(__dirname, './node/vue')
 
 /**
  * Main function
@@ -63,7 +63,7 @@ function generateVue () {
 function copyFilesToRoot (dir) {
     const projectRootPath = process.env.NODE_ENV === 'test'
         ? path.resolve(__dirname, './test/temp')
-        : __dirname
+        : './'
 
     getFileList(dir).forEach(file => {
         copyFile(
