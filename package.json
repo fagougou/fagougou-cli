@@ -1,6 +1,6 @@
 {
   "name": "fagougou-cli",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Fagougou Command Line Tool",
   "main": "./index.js",
   "scripts": {
@@ -17,5 +17,23 @@
   },
   "devDependencies": {
     "eslint-config-fagougou": "^1.3.1"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fagougou/fagougou-cli.git"
+  },
+  "keywords": [
+    "fagougou",
+    "node",
+    "cli",
+    "javascript",
+    "command line tool"
+  ],
+  "bugs": {
+    "url": "https://github.com/fagougou/fagougou-cli/issues"
+  },
+  "homepage": "https://github.com/fagougou/fagougou-cli#readme"
 }
