@@ -16,6 +16,7 @@ Fagougou Command Line Tool
 ## Usage
 
 `$ fggcli`
+
 `-h, --help`
 
 `-b, --base Base Node Application`
