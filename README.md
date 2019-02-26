@@ -16,3 +16,8 @@ Fagougou Command Line Tool
 ## Usage
 
 `$ fggcli`
+`-h, --help`
+
+`-b, --base Base Node Application`
+
+`-v, --vue Node + Vue Application`
