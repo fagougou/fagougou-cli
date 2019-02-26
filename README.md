@@ -1,7 +1,13 @@
 Fagougou-cli
 ============
 
-Fagougou Command Line Tool
+Fagougou Command Line Tool will help you to generate files before starting a Node project.
+
+Now it supports to generate:
+
+- `Dockerfile`
+- `.drone.yml`
+- `.eslintrc`
 
 ## Installation
 
